@@ -3,14 +3,13 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
-#header{
-    background-color: rgba(42, 24, 108, 1);
-}
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+    border-bottom: 0.00000000000001px solid whitesmoke;
+    background-color: #1A0B2E;
 }
 .link-container ul{
     display: flex;
@@ -45,6 +44,55 @@ a:hover{
     cursor: pointer;
     gap: 5px;
 }
-.btn:hover{
+.btn,.btn-1:hover{
     background:rgb(99, 72, 72) ;
+}
+#banner-section{
+    background-image: url(./assets/hero-bg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+.banner-image-1{
+    position: relative;
+    top: 95px;
+    left: 14px;
+   
+}
+.banner-image-2{
+    position: absolute;
+    top: 300px;
+    right: 723px;   
+}
+.banner-content{
+    color: #FFFFFF;
+    text-align: center;
+    /* gap: 2px; */
+}
+.banner-content h1{
+    font-size: 4rem;
+    font-weight:bolder;
+    margin: 0;
+}
+.banner-button{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.btn-1{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #1A0B2E;
+    color:#00FF88;
+    border: 1px solid #00FF88;;
+    border-radius: 10000px;
+    padding: 14px 23px 14px 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
 }
