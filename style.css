@@ -23,15 +23,7 @@
 a:hover{
     background-color: rgb(157, 99, 23);
 }
-:root{
-    --brand-gradient: linear-gradient(
-        20deg,
-        #F7E93F 10%,
-        #FB09B4 51%,
-        #9100F8 100%
-    );
-}
-.btn{
+.button{
     background: var(--brand-gradient);
     font-size: 1rem;
     font-weight: 500;
@@ -44,8 +36,19 @@ a:hover{
     cursor: pointer;
     gap: 5px;
 }
-.btn,.btn-1:hover{
+:root{
+    --brand-gradient: linear-gradient(
+        25deg,
+        #F7E93F 15%,
+        #FB09B4 51%,
+        #9100F8 100%
+    );
+}
+.btn-1:hover{
     background:rgb(99, 72, 72) ;
+}
+.button:hover{
+     background:rgb(99, 72, 72) ;
 }
 #banner-section{
     background-image: url(./assets/hero-bg.png);
@@ -69,7 +72,6 @@ a:hover{
 .banner-content{
     color: #FFFFFF;
     text-align: center;
-    /* gap: 2px; */
 }
 .banner-content h1{
     font-size: 4rem;
@@ -80,7 +82,7 @@ a:hover{
     display: flex;
     gap: 18px;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 90px;
 }
 .btn-1{
     font-size: 1rem;
@@ -95,4 +97,29 @@ a:hover{
     align-items: center;
     cursor: pointer;
     gap: 5px;
+}
+.About-podcast{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.podcast-section{
+    background-color: #1A0B2E;
+    gap: 160px;
+}
+.podcast-heading{
+    color: #FFFFFF;
+    padding: 50px 200px 40px 200px;
+}
+.podcast-heading p{
+    height: 148px;
+    width: 1200px;
+}
+.podcast-data{
+    display: flex;
+    color: #00FF88;
+    gap: 80px;
+    padding: 30px 200px 120px 200px;
 }
