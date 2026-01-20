@@ -11,7 +11,7 @@
     justify-content: space-around;
     align-items: center;
     padding: 30px;
-    border-bottom: 0.00000000000001px solid whitesmoke;
+    border-bottom: 0.000000000000000000000001px solid rgb(72, 66, 66);
     background-color: #1A0B2E;
 }
 .menu{
@@ -43,6 +43,30 @@ a:hover{
     gap: 5px;
 
 }
+.Subscribe{
+    overflow: hidden;
+}
+.arrow{
+    display: inline-block;
+    animation: arrowMove 1.5s ease-in-out infinite;
+}
+@keyframes arrowMove{
+    0%{
+        transform: translateX(0); opacity:1;
+    }
+    50%{
+        transform: translateX(50px); opacity:1;
+    }
+    60%{
+        opacity: 0;
+    }
+    61%{
+        transform: translateX(-10px); opacity:0;
+    }
+    100%{
+        transform: translateX(0); opacity:1;
+    }
+}
 .button-1{
      background: var(--brand-gradient);
     font-size: 1rem;
@@ -55,7 +79,20 @@ a:hover{
     align-items: center;border: none;
     cursor: pointer;
     gap: 5px;
-
+    background-size: 400% 400%;
+    animation: gradientFlow 3s ease infinite;
+    box-shadow: 0 0 25px rgba(235, 0, 110, 0.4)
+}
+@keyframes gradientFlow {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
 :root{
     --brand-gradient: linear-gradient(
